@@ -3,6 +3,9 @@
     padding: 0;
     box-sizing: border-box;
 }
+html {
+    scroll-behavior: smooth;
+}
 
 body {
     background-color: #ecf0f1;
@@ -81,6 +84,12 @@ a {
 }
 .header .menu ul li:hover > a{
     background-color: #158142;
+}
+.header .menu ul li i {
+    transition: .3s;
+}
+.header .menu ul li i:hover {
+    transform: rotate(-90deg);
 }
 .header .menu ul li ul {
     text-align: center;
@@ -207,6 +216,7 @@ a {
 
 .container {
     overflow: hidden;
+    padding-top: 50px;
 }
 .container .content h2 {
     display: inline-block;
@@ -316,7 +326,7 @@ a {
     transform-origin: center left;
     
 }
-.bottom .contact .name, .email:active, .bottom .contact .name, .email:hover {
+.bottom .contact .name, .email:hover {
     border: none;
     border-bottom: 2px solid #27ae60;
 }
@@ -325,7 +335,7 @@ a {
     padding: 10px;
     font-size: 20px;
     line-height: 30px;
-    border: none;
+    border: 2px solid transparent;
 }
 .bottom .contact textarea:hover {
     border: 2px solid #27ae60;
